@@ -8,4 +8,5 @@ Currently using:
 - polybar
 - starship
 - rofi
+- arandr
 - goxlr-utility

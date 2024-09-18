@@ -16,6 +16,7 @@ set $mod Mod4
 exec --no-startup-id gsettings set org.gnome.desktop.interface color-scheme prefer-dark
 exec --no-startup-id picom
 exec --no-startup-id feh --bg-scale ~/backgrounds/nice-blue-background.png
+exec_always --no-startup-id dunst
 exec --no-startup-id xrdb -merge ~/.Xresources
 exec_always --no-startup-id setxkbmap -option ctrl:nocaps
 
@@ -54,6 +55,19 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
+
+# Inner gaps for all windows: space between two adjacent windows (or split containers).
+gaps inner 4px
+
+# Outer gaps for all windows: space along the screen edges.
+gaps outer 1px
+
+# Enabling “Smart Gaps” means no gaps will be shown when there is
+# precisely one window or split container on the workspace.
+#
+# inverse_outer only enables outer gaps when there is exactly one
+# window or split container on the workspace.
+smart_gaps off
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status

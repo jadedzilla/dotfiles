@@ -1,5 +1,5 @@
 [global]
-frame_color = "#89b4fa"
+frame_color = "#cba6f7"
 separator_color= frame
 
 [urgency_low]

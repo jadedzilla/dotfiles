@@ -84,6 +84,9 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec --no-startup-id alacritty
 
+# start browser
+bindsym $mod+b exec --no-startup-id firefox
+
 # kill focused window
 bindsym $mod+Shift+q kill
 

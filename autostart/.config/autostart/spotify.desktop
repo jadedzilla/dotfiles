@@ -1,6 +1,7 @@
 [Desktop Entry]
 Type=Application
 Name=Spotify
+Icon=spotify
 Comment=Music streaming service
 Path=/usr/bin
 Exec=/usr/bin/spotify

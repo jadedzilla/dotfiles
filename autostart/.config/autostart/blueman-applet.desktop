@@ -1,6 +1,7 @@
 [Desktop Entry]
 Type=Application
 Name=Blueman Applet
+Icon=blueman-applet
 Comment=Blueman daemon
 Path=/usr/bin
 Exec=/usr/bin/blueman-applet

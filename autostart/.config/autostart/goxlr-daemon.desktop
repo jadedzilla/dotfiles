@@ -1,6 +1,7 @@
 [Desktop Entry]
 Type=Application
 Name=GoXLR Utility
+Icon=goxlr-utility
 Comment=A Tool for Configuring a GoXLR
 Path=/usr/bin
 Exec=/usr/bin/goxlr-daemon

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Spotify
+Comment=Music streaming service
+Path=/usr/bin
+Exec=/usr/bin/spotify
+Terminal=false

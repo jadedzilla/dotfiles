@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=slstatus
+Comment=Statusbar for dwm
+Path=/usr/local/bin
+Exec=/usr/local/bin/slstatus
+Terminal=false

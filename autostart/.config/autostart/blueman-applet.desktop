@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Blueman Applet
+Comment=Blueman daemon
+Path=/usr/bin
+Exec=/usr/bin/blueman-applet
+Terminal=false

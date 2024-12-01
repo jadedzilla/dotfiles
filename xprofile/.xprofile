@@ -1,2 +1,7 @@
+# xrandr --output DP-0 --mode 1920x1080 --rate 165 --primary --output HDMI-0 --mode 1920x1080 --rate 60 --left-of DP-0 --rotate left &
+# xrandr --output DP-0 --mode 1920x1080 --rate 165 --primary --output HDMI-0 --off &
 ~/.screenlayout/default.sh &
-goxlr-daemon
+# nvidia-settings --load-config-only &
+~/.config/scripts/random-wallpaper.sh &
+picom -b &
+dex -a &

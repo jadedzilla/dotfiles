@@ -1,12 +1,17 @@
 # Gojira Dotfiles
 ### My personal dotfiles for archlinux
 Currently using:
-- i3
+- [dwm](https://github.com/jadedzilla/jaded-dwm) - started with xorg-xinit
 - feh
-- alacritty
+- [st](https://github.com/BreadOnPenguins/st)
 - picom
-- polybar
-- starship
+- [slstatus](https://github.com/jadedzilla/jaded-slstatus)
 - rofi
-- arandr
+- dex
+- fish
+- pywal
+- pywalfox
+- xdotool
+- dunst
+- xdg-user-dirs
 - goxlr-utility

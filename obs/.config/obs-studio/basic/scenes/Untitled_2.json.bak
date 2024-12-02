@@ -1236,7 +1236,7 @@
                         "override_entire_effect": false,
                         "expand_left": 4.0038696802469076e-6,
                         "shader_file_name": "/home/jaded/.config/obs-studio/plugins/obs-shaderfilter/data/examples/zoom.shader",
-                        "power": 0.91407530595135966
+                        "power": 0.99999999465332068
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -4317,7 +4317,6 @@
                     "prev_ver": 520093696,
                     "name": "Sync volume with GoXLR Channel",
                     "uuid": "8f4efcdb-e0bd-41ba-988d-ae3efcddc715",
-                    "id": "D",
                     "versioned_id": "FaderSyncPlugin/GoXlrChannelSyncFilter",
                     "settings": {
                         "DEVICE_SERIAL": "S220202874DI7",
@@ -4377,7 +4376,6 @@
                     "prev_ver": 520093696,
                     "name": "Sync volume with GoXLR Channel",
                     "uuid": "deb298f8-3622-4150-8c20-bca236a7de58",
-                    "id": "D",
                     "versioned_id": "FaderSyncPlugin/GoXlrChannelSyncFilter",
                     "settings": {
                         "DEVICE_SERIAL": "S220202874DI7",
@@ -4437,7 +4435,6 @@
                     "prev_ver": 520093696,
                     "name": "Sync volume with GoXLR Channel",
                     "uuid": "7f9581c8-639d-4afa-bd27-d502cadf5339",
-                    "id": "D",
                     "versioned_id": "FaderSyncPlugin/GoXlrChannelSyncFilter",
                     "settings": {
                         "DEVICE_SERIAL": "S220202874DI7",
@@ -4497,7 +4494,6 @@
                     "prev_ver": 520093696,
                     "name": "Sync volume with GoXLR Channel",
                     "uuid": "60e65bac-0ab0-43d5-9aca-41cdcd0000d4",
-                    "id": "D",
                     "versioned_id": "FaderSyncPlugin/GoXlrChannelSyncFilter",
                     "settings": {
                         "DEVICE_SERIAL": "S220202874DI7",
@@ -4534,7 +4530,7 @@
             "mixers": 255,
             "sync": 0,
             "flags": 0,
-            "volume": 0.093126244843006134,
+            "volume": 0.13295702636241913,
             "balance": 0.5,
             "enabled": true,
             "muted": false,
@@ -4557,7 +4553,6 @@
                     "prev_ver": 520093696,
                     "name": "Sync volume with GoXLR Channel",
                     "uuid": "5718e859-79f3-4d34-ba43-0541cbff8d05",
-                    "id": "D",
                     "versioned_id": "FaderSyncPlugin/GoXlrChannelSyncFilter",
                     "settings": {
                         "DEVICE_SERIAL": "S220202874DI7",

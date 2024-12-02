@@ -1,6 +1,6 @@
 {
-    "current_scene": "Main",
-    "current_program_scene": "Main",
+    "current_scene": "Starting",
+    "current_program_scene": "Starting",
     "scene_order": [
         {
             "name": "Starting"
@@ -1236,7 +1236,7 @@
                         "override_entire_effect": false,
                         "expand_left": 4.0038696802469076e-6,
                         "shader_file_name": "/home/jaded/.config/obs-studio/plugins/obs-shaderfilter/data/examples/zoom.shader",
-                        "power": 0.99999999465332068
+                        "power": 0.99999999465337974
                     },
                     "mixers": 0,
                     "sync": 0,
@@ -4177,8 +4177,8 @@
                     "versioned_id": "obs_retro_effects_filter",
                     "settings": {
                         "filter_type": 10,
-                        "codec_colors_per_channel": 32,
                         "codec_px_scale": 6.2599999999999998,
+                        "codec_colors_per_channel": 32,
                         "codec_quality": 1.0
                     },
                     "mixers": 0,
@@ -4412,7 +4412,7 @@
             "mixers": 255,
             "sync": 0,
             "flags": 0,
-            "volume": 0.16857925057411194,
+            "volume": 0.19905316829681396,
             "balance": 0.5,
             "enabled": true,
             "muted": false,
@@ -4530,7 +4530,7 @@
             "mixers": 255,
             "sync": 0,
             "flags": 0,
-            "volume": 0.13295702636241913,
+            "volume": 0.095363333821296692,
             "balance": 0.5,
             "enabled": true,
             "muted": false,

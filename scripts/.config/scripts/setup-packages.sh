@@ -2,8 +2,6 @@
 
 . ./setup-common.sh
 
-PACKAGES=(firefox neovim goxlr-utility spotify dunst vesktop flameshot obs-studio)
-
 installPackages() {
     case "$PACKAGER" in
     pacman)

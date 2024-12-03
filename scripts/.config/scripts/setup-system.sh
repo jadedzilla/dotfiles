@@ -17,4 +17,5 @@ installDWM
 installSt
 installDotfiles
 installPackages
+./random-wallpaper.sh
 

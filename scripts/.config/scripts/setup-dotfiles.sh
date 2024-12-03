@@ -3,6 +3,8 @@
 . ./setup-common.sh
 
 installDotfiles() {
+    checkEnv
+    checkEscalationTool
     printf "%b\n" "${YELLOW}Gojira Dotfiles Setup${RC}"
     case "$PACKAGER" in
     pacman)
@@ -18,3 +20,5 @@ installDotfiles() {
         ;;
     esac
 }
+
+installDotfiles

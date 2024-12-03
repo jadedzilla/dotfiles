@@ -10,6 +10,7 @@ wallpaper="$(cat "${HOME}/.fehbg" | awk -F "'" '{print $2}')"
 wal -i $wallpaper
   
 # Refresh xrdb in DWM
+ln -sf ~/.cache/wal/colors.Xresources ~/.Xresources
 xdotool key Super+F5
 
 # Restart dunst

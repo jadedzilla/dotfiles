@@ -12,7 +12,7 @@ installDotfiles() {
         "$ESCALATION_TOOL" "$PACKAGER" -S --needed --noconfirm stow
         printf "%b\n" "${GREEN}GNU Stow installed${RC}"
         printf "%b\n" "${YELLOW}Installing Gojira dotfiles...${RC}"
-        stow -v -R -t "$HOME" -d ~/dotfiles/ */
+        stow -v -R -t "$HOME" -d ~/dotfiles */
         printf "%b\n" "${GREEN}Gojira dotfiles installed!${RC}"
         ;;
     *)

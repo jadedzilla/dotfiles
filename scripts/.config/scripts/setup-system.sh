@@ -11,8 +11,8 @@
 checkEnv
 checkEscalationTool
 installParu
-installSt
 installDWM
+installSt
 installDotfiles
 installPackages
 

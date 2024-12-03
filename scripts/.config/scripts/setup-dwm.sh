@@ -13,7 +13,7 @@ installDWM() {
         printf "%b\n" "${YELLOW}Installing DWM...${RC}"
         "$ESCALATION_TOOL" "$PACKAGER" -S --needed --noconfirm base-devel git
         cd /opt && "$ESCALATION_TOOL" git clone https://github.com/jadedzilla/jaded-dwm.git && "$ESCALATION_TOOL" chown -R "$USER": ./jaded-dwm
-        # cd jaded-dwm && "$ESCALATION_TOOL" make clean install
+        cd jaded-dwm && "$ESCALATION_TOOL" make clean install
         printf "%b\n" "${GREEN}DWM installed${RC}"
         ;;
     *)

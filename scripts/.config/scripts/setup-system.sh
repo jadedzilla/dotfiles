@@ -11,6 +11,7 @@
 checkEnv
 checkEscalationTool
 installParu
+setupChaoticAUR
 installDWM
 installSt
 installDotfiles

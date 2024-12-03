@@ -3,9 +3,6 @@
 . ./setup-common.sh
 
 setupChaoticAUR() {
-    checkEnv
-    checkEscalationTool
-
     if grep --quiet -x '\[chaotic-aur\]' '/etc/pacman.conf' && grep --quiet -x 'Include = /etc/pacman.d/chaotic-mirrorlist' '/etc/pacman.conf'; then
         echo -e "${Green}Chaotic AUR is already installed!${NC}"
     else
@@ -22,6 +19,7 @@ setupChaoticAUR() {
             "$ESCALATION_TOOL" echo -e "[chaotic-aur]" | sudo tee -a /etc/pacman.conf
             "$ESCALATION_TOOL" echo -e "Include = /etc/pacman.d/chaotic-mirrorlist" | sudo tee -a /etc/pacman.conf
             printf "%b\n" "${GREEN}Chaotic AUR installed${RC}"
+            "$AUR_HELPER" -Syy
             ;;
         *)
             printf "%b\n" "${RED}Unsupported package manager: ""$PACKAGER""${RC}"
@@ -29,5 +27,3 @@ setupChaoticAUR() {
         esac
     fi
 }
-
-setupChaoticAUR

@@ -1,31 +1,30 @@
-#!/bin/bash
+#!/bin/sh
 
+wallpaperPath=~/Pictures/Wallpapers/Winter
+wallpaper=$wallpaperPath/$(ls -Rp $wallpaperPath | grep -v / | shuf -n 1)
 
-updateWallpaper() {
-    wallpaperPath=~/Pictures/Wallpapers/Winter
+# Apply pywal color scheme to desktop
+wal -i $wallpaper -n
 
-    # Set a random wallpaper from the specified folder
-    feh --bg-fill $wallpaperPath/$(ls -Rp $wallpaperPath | grep -v / | shuf -n 1)
+# Set a random wallpaper from the specified folder
+feh --bg-fill $wallpaper
 
-    # Get the current wallpaper from .fehbg
-    wallpaper="$(cat "${HOME}/.fehbg" | awk -F "'" '{print $2}')"
+# Refresh xrdb in DWM
+ln -sf ~/.cache/wal/colors.Xresources ~/.Xresources
+xdotool key Super+F5
 
-    # Apply pywal color scheme to desktop
-    wal -i $wallpaper
-    
-    # Refresh xrdb in DWM
-    ln -sf ~/.cache/wal/colors.Xresources ~/.Xresources
-    xdotool key Super+F5
+# Update pywalfox theme
+pywalfox update
 
-    # Restart dunst
-    pkill dunst
-    exec dunst
+# Update discord theme
+pywal-discord -p ${HOME}/.config/vesktop/themes/
 
-    # Update pywalfox theme
-    pywalfox update
+# Update spicetify colors
+pywal-spicetify marketplace
 
-    # Update discord theme
-    pywal-discord -p ~/.config/vesktop/themes/
-}
+echo "Updated to $wallpaper"
 
-updateWallpaper
+# Restart dunst
+pkill dunst
+dunst
+

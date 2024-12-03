@@ -8,7 +8,7 @@ installDWM() {
     case "$PACKAGER" in
     pacman)
         printf "%b\n" "${YELLOW}Installing Xorg...${RC}"
-        "$ESCALATION_TOOL" "$PACKAGER" -S --needed --noconfirm xorg-server xorg-xinit xorg-xrandr xorg-xsetroot xorg-xrdb
+        "$ESCALATION_TOOL" "$PACKAGER" -S --needed --noconfirm xorg-server xorg-xinit xorg-xrandr xorg-xsetroot xorg-xrdb picom dex feh python-pywal
         printf "%b\n" "${GREEN}Xorg installed${RC}"
         printf "%b\n" "${YELLOW}Installing DWM...${RC}"
         "$ESCALATION_TOOL" "$PACKAGER" -S --needed --noconfirm base-devel git

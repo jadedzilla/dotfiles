@@ -3,8 +3,6 @@
 . ./setup-common.sh
 
 installDotfiles() {
-    checkEnv
-    checkEscalationTool
     printf "%b\n" "${YELLOW}Gojira Dotfiles Setup${RC}"
     case "$PACKAGER" in
     pacman)
@@ -12,7 +10,8 @@ installDotfiles() {
         "$ESCALATION_TOOL" "$PACKAGER" -S --needed --noconfirm stow
         printf "%b\n" "${GREEN}GNU Stow installed${RC}"
         printf "%b\n" "${YELLOW}Installing Gojira dotfiles...${RC}"
-        stow -v -R -d "$HOME/dotfiles" -t "$HOME" */
+        cd ~/dotfiles && stow -v -R -t "$HOME" */
+        cd -
         printf "%b\n" "${GREEN}Gojira dotfiles installed!${RC}"
         ;;
     *)
@@ -20,5 +19,3 @@ installDotfiles() {
         ;;
     esac
 }
-
-installDotfiles

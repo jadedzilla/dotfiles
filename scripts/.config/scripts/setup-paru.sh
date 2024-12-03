@@ -10,6 +10,7 @@ installParu() {
             "$ESCALATION_TOOL" "$PACKAGER" -S --needed --noconfirm base-devel git
             cd /opt && "$ESCALATION_TOOL" git clone https://aur.archlinux.org/paru-bin.git && "$ESCALATION_TOOL" chown -R "$USER": ./paru-bin
             cd paru-bin && makepkg --noconfirm -si
+            "$AUR_HELPER" -Syy
             printf "%b\n" "${GREEN}Paru installed${RC}"
         else
             printf "%b\n" "${GREEN}Paru already installed${RC}"

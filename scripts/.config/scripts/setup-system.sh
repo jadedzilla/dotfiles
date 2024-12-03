@@ -17,5 +17,5 @@ installDWM
 installSt
 installDotfiles
 installPackages
-. ./random-wallpaper.sh
+wal -i ~/Pictures/Wallpapers/Winter/Ludwig_Lanckow-Winterlicher_verschneiter_Wald_im_Abendrot.png
 

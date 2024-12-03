@@ -15,6 +15,8 @@ installDWM() {
         cd /opt && "$ESCALATION_TOOL" git clone https://github.com/jadedzilla/jaded-dwm.git && "$ESCALATION_TOOL" chown -R "$USER": ./jaded-dwm
         cd jaded-dwm && "$ESCALATION_TOOL" make clean install
         printf "%b\n" "${GREEN}DWM installed${RC}"
+        cd /opt && "$ESCALATION_TOOL" git clone https://github.com/jadedzilla/jaded-slstatus.git && "$ESCALATION_TOOL" chown -R "$USER": ./jaded-slstatus
+        cd jaded-slstatus && "$ESCALATION_TOOL" make clean install
         ;;
     *)
         printf "%b\n" "${RED}Unsupported package manager: ""$PACKAGER""${RC}"

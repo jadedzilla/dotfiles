@@ -18,4 +18,4 @@ installSt
 installDotfiles
 installPackages
 wal -i ~/Pictures/Wallpapers/Winter/Ludwig_Lanckow-Winterlicher_verschneiter_Wald_im_Abendrot.png
-
+ln -sf ~/.cache/wal/colors.Xresources ~/.Xresources

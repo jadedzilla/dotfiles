@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Discord
+Icon=discord-canary
+Comment=Discord autostart script
+Exec="/usr/bin/discord-canary"
+StartupNotify=false
+Terminal=false

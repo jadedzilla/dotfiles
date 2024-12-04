@@ -1,8 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=Vesktop
-Icon=vesktop
-Comment=Vesktop autostart script
-Exec="/usr/lib/vesktop/vesktop"
-StartupNotify=false
-Terminal=false
